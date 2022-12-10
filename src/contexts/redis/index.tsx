@@ -20,14 +20,17 @@ export const RedisProvider: FC<Props> = ({ children }) => {
     const [data, setData] = useState(DefaultValue);
 
     useEffect(() => {
-        if (!window.RedisGUI) {
-            return undefined;
-        }
+        // if (!window.RedisGUI) {
+        //     return undefined;
+        // }
 
         setData({
-            path: window.RedisGUI.path as RedisContext["path"],
-            connections: window.RedisGUI
-                .connections as RedisContext["connections"],
+            path: "redis-gui",
+            connection: "default",
+            connections: ["default", "cache", "horizon"],
+            // path: window.RedisGUI.path as RedisContext["path"],
+            // connections: window.RedisGUI
+            //     .connections as RedisContext["connections"],
         });
     }, []);
 

@@ -1,8 +1,12 @@
 import { RedisContext } from "./types";
 
 export const DefaultValue: RedisContext = {
-    path: "",
+    connection: "",
     connections: [],
-    activeItem: null,
+    details: null,
+    path: "",
+    keys: [],
+    actionType: null,
+    actionDetails: null,
     handleChange: () => {},
 };

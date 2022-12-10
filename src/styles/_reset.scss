@@ -8,7 +8,8 @@ html {
     padding: 0;
     background-color: #141517 !important;
     color: #f5f5f5 !important;
-    font-family: IRANSans, Arial, sans-serif !important;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Roboto, "Helvetica Neue", Arial, sans-serif !important;
     scroll-behavior: smooth;
 }
 
@@ -20,7 +21,8 @@ body {
 *,
 select,
 option {
-    font-family: IRANSans, Arial, sans-serif !important;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
 select,

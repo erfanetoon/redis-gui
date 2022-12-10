@@ -1,5 +1,4 @@
-type TRoutesKey =
-   "";
+type TRoutesKey = "REDIS" | "KEYS";
 
 type TRequestMethods = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
 

@@ -1,5 +1,9 @@
+import RedisApis from "./apis/redis";
+
 const Common = {
-    api: {},
+    api: {
+        redis: RedisApis,
+    },
 };
 
 export default Common;

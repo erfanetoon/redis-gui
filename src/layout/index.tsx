@@ -11,8 +11,10 @@ interface Props {
 const Layout: FC<Props> = ({ loading, children }) => {
     return (
         <div className="p-4 flex flex-col items-center h-screen w-screen">
-            <div className="inline-flex items-center justify-between w-full mb-4">
-                <Connections />
+            <div className="md:inline-flex items-center justify-between w-full mb-4">
+                <div className="mb-2 md:mb-0 text-center md:text-left">
+                    <Connections />
+                </div>
 
                 <Details />
             </div>

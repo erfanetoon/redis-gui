@@ -1,13 +1,21 @@
 import { useRedisContext } from "../../../contexts/redis";
 import { Select } from "@mantine/core";
+import { SiRedis } from "react-icons/si";
 
 const Connections = () => {
-    const { connections } = useRedisContext();
+    const { connection, connections, handleChange } = useRedisContext();
 
     return (
         <Select
             variant="filled"
-            radius={9999}
+            onChange={(value: string) =>
+                handleChange({
+                    connection: value,
+                })
+            }
+            icon={<SiRedis className="text-lg text-red-500" />}
+            className="inline-block"
+            value={connection}
             data={connections.map((item) => ({
                 label: item,
                 value: item,
